@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Cloting Advisor</title>
+</head>
+<body>
+    <script>
+        let temp = parseInt(prompt("What is the temperature outside?"))
+        let isRaining = confirm("Is it raining outside")
+
+        const validateClothing = ()=>{
+            if(isRaining){
+                alert("Please wearm warm clothes to keep cold away")
+                return
+            }
+            if(temp > 40){
+                alert("Please keep on light clothes to evoke heat stokes")
+                return
+            }
+        }
+        validateClothing()
+    </script>
+</body>
+</html>
